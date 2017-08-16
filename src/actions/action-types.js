@@ -1,0 +1,20 @@
+const formActionTypes = {
+  'SAVE_STEP_1': 'SAVE_STEP_1'
+}
+
+const dayPickerActionTypes = {
+  'ADD_TO_SELECTED_DAYS': 'ADD_TO_SELECTED_DAYS',
+  'ADD_TO_SELECTED_TIMES': 'ADD_TO_SELECTED_TIMES'
+}
+
+const locationActionTypes = {
+  'GET_LOCATION_SUGGESTION_REQUEST': 'GET_LOCATION_SUGGESTION_REQUEST',
+  'GET_LOCATION_SUGGESTION_SUCCESS': 'GET_LOCATION_SUGGESTION_SUCCESS',
+  'GET_LOCATION_SUGGESTION_FAILURE': 'GET_LOCATION_SUGGESTION_FAILURE'
+}
+
+export default {
+  ...formActionTypes,
+  ...dayPickerActionTypes,
+  ...locationActionTypes
+}

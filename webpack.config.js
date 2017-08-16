@@ -24,7 +24,7 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
-          presets: ['env', 'react']
+          presets: ['env', 'react', 'stage-2']
         }
       },
       {
@@ -46,12 +46,23 @@ module.exports = {
           ],
           fallback: 'style-loader'
         })
+      },
+      {
+        test: /\.(eot|ttf|woff|png|jpg|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: './[name].[ext]'
+            }
+          }
+        ]
       }
     ]
   },
 
   plugins: [
-    envTask(function() {}, new UglifyJSPlugin()),
+    envTask(function () { }, new UglifyJSPlugin()),
     new ExtractTextPlugin('style.css')
   ]
 }

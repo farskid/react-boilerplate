@@ -7,6 +7,9 @@ import { browserHistory } from 'react-router'
 import store from './store'
 import createRouter from './routes'
 
+// Import Styles
+import './styles/index.scss'
+
 const history = syncHistoryWithStore(browserHistory, store)
 
 ReactDOM.render(

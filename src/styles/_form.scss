@@ -1,0 +1,82 @@
+.form-bg {
+  background-image: linear-gradient(180deg,rgba(69,159,215,.93) 0,rgba(69,159,215,.93)),url(./images/pattern.png);
+  padding: 1em;
+  background-size: auto 100%;
+}
+
+.form-footer {
+  padding: .5em 1em;
+
+  .btn {
+    float: left;
+  }
+}
+
+.form {
+  text-align: center;
+  color: $white;
+}
+
+.form-inputs {
+  background-color: $white;
+  border-radius: .25em;
+  padding: 2em;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.input-group {
+  position: relative;
+  width: 60%;
+  margin: 1em auto 3em;
+}
+
+.form-label {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: $black;
+  transition: 150ms ease;
+
+  // Optional Label
+  small {
+    color: darken($gray, 15%);
+    display: inline-block;
+    margin-right: .5em;
+    opacity: 1;
+    transition: 150ms ease;
+  }
+}
+
+.form-input {
+  border: 0 none;
+  border-bottom: 1px solid $gray;
+  background-image: none;
+  background-color: $white;
+  display: block;
+  width: 100%;
+  padding: .25em .5em;
+  color: $black;
+  font-family: inherit;
+  transition: 250ms ease;
+
+  &:focus, &.input-has-value {
+    outline: 0 none;
+    border-bottom-color: $red;
+    background-color: rgba(150,150,150,.1);
+
+    + .form-label {
+      color: $red;
+      transform: translateY(-100%);
+      font-size: .6em;
+
+      small {
+        opacity: 0;
+      }
+    }
+  }
+}
+textarea.form-input {
+  resize: vertical;
+}

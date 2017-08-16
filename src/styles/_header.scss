@@ -1,0 +1,17 @@
+.pm-header {
+  padding: 1em;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-has-back {
+  justify-content: space-between;
+}
+
+.pm-brand {
+  margin: 0;
+  color: $blue;
+}

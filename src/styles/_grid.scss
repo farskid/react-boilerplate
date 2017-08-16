@@ -1,0 +1,30 @@
+.container {
+  display: block;
+  margin: 0 auto;
+  max-width: 48em; //768px
+  padding: 0 1em;
+}
+
+.row {
+  @extend .clearfix;
+  margin: 0 -1em;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    float: left;
+    width: (($i / 12) * 100) * 1%;
+    padding: 0 .5em;
+  }
+}
+
+.clearfix {
+  &:after,
+  &:before {
+    content: ' ';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}

@@ -1,11 +1,13 @@
 import React from 'react'
 
-class AppWrapper extends React.Component {
+class App extends React.Component {
   render() {
     return (
-      <h1>AppWrapper</h1>
+      <div className="pm container">
+        {this.props.children}
+      </div>
     )
   }
 }
 
-export default AppWrapper
+export default App

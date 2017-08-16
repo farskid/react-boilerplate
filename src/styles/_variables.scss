@@ -1,0 +1,17 @@
+$primary-bg: #eee;
+
+$blue: #3798D4;
+$gray: #ddd;
+$white: #fff;
+$black: #000;
+$red: #ff876d;
+$green: #9dcf66;
+
+$daypicker: (
+  'gray': darken($gray, 50%),
+  'light': lighten($gray, 10%),
+  'blue': $blue,
+  'red': $red,
+  'muted': $gray,
+  'white': $white
+)

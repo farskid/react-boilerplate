@@ -1,0 +1,51 @@
+.btn {
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5em 0.75em;
+  font-size: 1em;
+  line-height: 1.25;
+  border-radius: 0.25em;
+  min-width: 8em;
+  transition: 0.15s ease-in-out;
+  cursor: pointer;
+  font-family: inherit;
+  color: $black;
+
+  &:focus {
+    outline: 0 none;
+  }
+}
+
+a.btn {
+  text-decoration: none;
+  &:focus {
+    text-decoration: none;
+  }
+  &:visited {
+    color: $black;
+  }
+}
+
+.btn-large {
+  height: 2.5em;
+  font-size: 1.25em;
+}
+
+.btn-small {
+  font-size: .75em;
+}
+
+.btn-green {
+  background-color: $green;
+  color: $white;
+}
+
+.btn-default {
+  background-color: transparent;
+  border: 2px solid $gray;
+}
